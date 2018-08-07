@@ -77,7 +77,7 @@ export default new Router({
           component: Dashboard
         },
         {
-          path: '/theme',
+          path: '/admin/theme',
           redirect: '/theme/colors',
           name: 'Theme',
           component: {
@@ -96,17 +96,17 @@ export default new Router({
           ]
         },
         {
-          path: '/charts',
+          path: '/admin/charts',
           name: 'Charts',
           component: Charts
         },
         {
-          path: '/widgets',
+          path: '/admin/widgets',
           name: 'Widgets',
           component: Widgets
         },
         {
-          path: '/users',
+          path: '/admin/users',
           meta: {
             label: 'Users'
           },
@@ -130,8 +130,8 @@ export default new Router({
           ]
         },
         {
-          path: '/base',
-          redirect: '/base/cards',
+          path: '/admin/base',
+          redirect: '/admin/base/cards',
           name: 'Base',
           component: {
             render(c) {
@@ -221,8 +221,8 @@ export default new Router({
           ]
         },
         {
-          path: '/buttons',
-          redirect: '/buttons/standard-buttons',
+          path: '/admin/buttons',
+          redirect: '/admin/buttons/standard-buttons',
           name: 'Buttons',
           component: {
             render(c) {
@@ -252,7 +252,7 @@ export default new Router({
           ]
         },
         {
-          path: '/icons',
+          path: '/admin/icons',
           redirect: '/icons/font-awesome',
           name: 'Icons',
           component: {
@@ -283,7 +283,7 @@ export default new Router({
           ]
         },
         {
-          path: 'notifications',
+          path: '/admin/notifications',
           redirect: '/notifications/alerts',
           name: 'Notifications',
           component: {
@@ -311,7 +311,7 @@ export default new Router({
       ]
     },
     {
-      path: '/pages',
+      path: '/admin/pages',
       redirect: '/pages/404',
       name: 'Pages',
       component: {
